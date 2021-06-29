@@ -43,12 +43,6 @@ npx prisma migrate dev --preview-feature
 npx prisma generate
 ```
 
-Run database (Prisma) seed:
-
-```
-npm run seed
-```
-
 Run the application:
 
 ```
