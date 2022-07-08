@@ -44,6 +44,9 @@ COPY package-lock.json .
 COPY package.json .
 COPY tsconfig.json .
 
+# install bash as default shell
+RUN apk add --no-cache bash
+
 # Copy the client code
 RUN mkdir src
 COPY src/config src/config
