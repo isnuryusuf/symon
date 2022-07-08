@@ -42,6 +42,9 @@ COPY tsconfig.json .
 COPY webpack.config.js .
 COPY config/nginx.conf .
 
+# install bash as default shell
+RUN apk add --no-cache bash
+
 # Copy the client code
 RUN mkdir src
 COPY src/client src/client
